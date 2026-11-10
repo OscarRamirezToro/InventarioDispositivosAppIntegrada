@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" prefHeight="420.0" prefWidth="440.0" spacing="15.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.cesur.dam.controllers.CreateViewController">
+    <padding>
+        <Insets bottom="30.0" left="35.0" right="35.0" top="30.0" />
+    </padding>
+    <children>
+        <Label text="Registrar Nuevo Dispositivo">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label text="Nombre o Identificador:" />
+        <TextField fx:id="txtIdentificadorNombre" promptText="Ej: Portátil Dell XPS" />
+        <Label text="Familia de Producto:" />
+        <ComboBox fx:id="comboFamilias" prefWidth="370.0" />
+        <CheckBox fx:id="checkOperativo" mnemonicParsing="false" selected="true" text="Dispositivo listo y operativo" />
+        <HBox alignment="CENTER_RIGHT" spacing="12.0">
+            <VBox.margin>
+                <Insets top="15.0" />
+            </VBox.margin>
+            <children>
+                <Button mnemonicParsing="false" onAction="#onCancelarClick" text="Cancelar" />
+                <Button mnemonicParsing="false" onAction="#onGuardarRegistroClick" text="Guardar Registro" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
