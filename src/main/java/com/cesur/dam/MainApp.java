@@ -1,6 +1,5 @@
 package com.cesur.dam;
 
-import com.cesur.dam.navigation.WindowManager;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
