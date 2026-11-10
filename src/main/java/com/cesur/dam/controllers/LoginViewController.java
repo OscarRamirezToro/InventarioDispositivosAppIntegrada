@@ -1,6 +1,6 @@
-package es.cesur.dam.controllers;
+package com.cesur.dam.controllers;
 
-import es.cesur.dam.navigation.WindowManager;
+import com.cesur.dam.navigation.WindowManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 

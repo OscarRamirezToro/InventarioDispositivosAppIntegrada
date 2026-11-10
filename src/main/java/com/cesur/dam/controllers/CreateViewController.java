@@ -1,10 +1,9 @@
-package es.cesur.dam.controllers;
+package com.cesur.dam.controllers;
 
-import es.cesur.dam.config.DBConnection;
-import es.cesur.dam.dao.DispositivoDAO;
-import es.cesur.dam.dao.GenericDAO;
-import es.cesur.dam.model.Dispositivo;
-import es.cesur.dam.navigation.WindowManager;
+import com.cesur.dam.data.DispositivoDAO;
+import com.cesur.dam.data.DAO;
+import com.cesur.dam.model.Dispositivo;
+import com.cesur.dam.navigation.WindowManager;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -26,7 +25,7 @@ public class CreateViewController implements Initializable {
     @FXML
     private CheckBox checkOperativo;
 
-    private final GenericDAO<Dispositivo> dispositivoService = new DispositivoDAO(DBConnection.getDataSource());
+    private final DAO<Dispositivo> dispositivoService = new DispositivoDAO(DBConnection.getDataSource());
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

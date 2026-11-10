@@ -1,6 +1,6 @@
-package es.cesur.dam.dao;
+package com.cesur.dam.data;
 
-import es.cesur.dam.model.Dispositivo;
+import com.cesur.dam.model.Dispositivo;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -11,7 +11,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DispositivoDAO implements GenericDAO<Dispositivo> {
+public class DispositivoDAO implements DAO<Dispositivo> {
 
     private final DataSource dataSource;
 

@@ -1,8 +1,8 @@
-package es.cesur.dam.dao;
+package com.cesur.dam.data;
 
 import java.util.List;
 
-public interface GenericDAO<T> {
+public interface DAO<T> {
     List<T> listarTodos();
     T insertar(T entidad);
 }

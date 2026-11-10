@@ -1,10 +1,9 @@
-package es.cesur.dam.controllers;
+package com.cesur.dam.controllers;
 
-import es.cesur.dam.config.DBConnection;
-import es.cesur.dam.dao.DispositivoDAO;
-import es.cesur.dam.dao.GenericDAO;
-import es.cesur.dam.model.Dispositivo;
-import es.cesur.dam.navigation.WindowManager;
+import com.cesur.dam.data.DispositivoDAO;
+import com.cesur.dam.data.DAO;
+import com.cesur.dam.model.Dispositivo;
+import com.cesur.dam.navigation.WindowManager;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -30,7 +29,7 @@ public class MainViewController implements Initializable {
     @FXML
     private TableColumn<Dispositivo, String> colEstado;
 
-    private final GenericDAO<Dispositivo> dispositivoService = new DispositivoDAO(DBConnection.getDataSource());
+    private final DAO<Dispositivo> dispositivoService = new DispositivoDAO(DBConnection.getDataSource());
     private final ObservableList<Dispositivo> masterData = FXCollections.observableArrayList();
 
     @Override

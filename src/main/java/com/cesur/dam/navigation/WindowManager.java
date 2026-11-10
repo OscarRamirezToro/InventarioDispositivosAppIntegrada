@@ -1,4 +1,4 @@
-package es.cesur.dam.navigation;
+package com.cesur.dam.navigation;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
