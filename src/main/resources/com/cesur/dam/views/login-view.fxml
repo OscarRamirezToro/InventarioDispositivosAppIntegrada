@@ -5,17 +5,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="320.0" prefWidth="380.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cesur.dam.controllers.LoginViewController">
+<VBox alignment="CENTER" prefHeight="320.0" prefWidth="380.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cesur.dam.presentation.LoginController">
     <padding>
         <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
     </padding>
     <children>
-        <Label text="Gestión de Inventario">
+        <Label text="InventarioApp">
             <font>
                 <Font name="System Bold" size="22.0" />
             </font>
         </Label>
-        <Label text="Módulo de Control de Acceso" textFill="#666666" />
-        <Button mnemonicParsing="false" onAction="#onLoginClick" prefHeight="38.0" prefWidth="180.0" text="Acceder al Panel" />
+        <Label text="Gestión de Equipos y Dispositivos" textFill="#666666" />
+        <Button mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="180.0" text="Acceder al Panel" />
     </children>
 </VBox>
